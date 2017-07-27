@@ -22,9 +22,7 @@ while True:
 s.close()
 
 for item in response.decode().split("\n"):
-	if "route:" in item:
-		print item.strip()
-	if "route6:" in item:
+	if ("route:" or "route6:") in item:
 		print item.strip()
 
 quit()
