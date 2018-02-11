@@ -2,7 +2,7 @@
 #
 # This is the parser of connected subnets in Cisco/Juniper/Huawei configs.
 #
-# You need to be rude.
+# You need to be root.
 if [ "$EUID" -ne 0 ]
   then echo -e "\033[36;1;41m Run as root please. \033[0m"
   exit
